@@ -4,24 +4,24 @@ import { ref,computed  } from 'vue';
 
 //variable drinking
 const travelList=ref([
-  {name: 'สุนทรารมณ์',  price:500, img:"https://scontent.fbkk8-4.fna.fbcdn.net/v/t39.30808-6/327442369_874305543617514_7552528986654738604_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeFNdHIyDFw8l9dSHVOxGbtd2Q6BSD08VdDZDoFIPTxV0Jyx8MQf2dauMZCHSslW0V1nOlqKwTeXRF6hl0wVPuBq&_nc_ohc=MoJ_i7SuIaIAX-5rY5N&_nc_ht=scontent.fbkk8-4.fna&oh=00_AfDj3eShgD3NfVF8NQhSLby8MjpxmT5xzwpvXF_JyQTVfQ&oe=65078060", quantity: 0 }, 
+   {name: 'สุนทรารมณ์',  price:500, img:"https://media.discordapp.net/attachments/1153766321666932836/1153887346882773063/1.jpg?width=701&height=701", quantity: 0 }, 
 
-  {name:'Overnight',  price:750, img:"https://scontent.fbkk8-4.fna.fbcdn.net/v/t39.30808-6/314943429_107842845474701_641691726405226769_n.jpg?stp=cp6_dst-jpg&_nc_cat=107&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeFloVqAmAQK63gBmvRlILSFEYxzLzXtdwsRjHMvNe13C67jqz5C4ozZtnfeVB-bdVvF2m0RlI6vAA4gmgVza1hd&_nc_ohc=DyHXRvzCagcAX_EsJ8L&_nc_ht=scontent.fbkk8-4.fna&oh=00_AfDbubdImiyk7GgevdA0_oG2_FFOM9qIOlBdVlX1-OYyYA&oe=6507B9F1", quantity: 0 },
+  {name:'Overnight',  price:750, img:"https://media.discordapp.net/attachments/1153766321666932836/1153887347121856652/2.jpg?width=701&height=701", quantity: 0 },
   
-  {name:'Tamma',      price:1500, img:"https://scontent.fbkk8-4.fna.fbcdn.net/v/t39.30808-1/361305041_779199773993037_7111305937619716444_n.jpg?stp=dst-jpg_p320x320&_nc_cat=110&ccb=1-7&_nc_sid=754033&_nc_eui2=AeGZ36SZ7tHE4Sn56ahHG-4VKhovrXyAa8YqGi-tfIBrxqe1tPcilruoK6M8iPurXs2EtvRAUFDpW4HyLULu-tZG&_nc_ohc=VqKbsOGLFokAX8slDCK&_nc_ht=scontent.fbkk8-4.fna&oh=00_AfBEDD-Ytjt30bDHq4-O8nH6emcpf55QqEORZt6dPgRw7g&oe=65077841", quantity: 0 },
+  {name:'Tamma',      price:1500, img:"https://media.discordapp.net/attachments/1153766321666932836/1153887347407077456/3.jpg?width=701&height=701", quantity: 0 },
 
-  {name:'ไปยาล',     price:1599, img:"https://scontent.fbkk8-4.fna.fbcdn.net/v/t39.30808-6/326435697_501993212005268_2267045348590722770_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeGmFPzsMIq3BFoj1PViby3YxTbvRg4F5HPFNu9GDgXkc_ntcZ1iiswsTq9-jcH-pP3KvXD7sj7D6hgpksqlR7X8&_nc_ohc=lq-ZZCnaPS4AX98BUoc&_nc_ht=scontent.fbkk8-4.fna&oh=00_AfBJ14fKjCxrqISqNLziSVrQdwHfq1wfmCLxouSEENt66w&oe=6508A1CF", quantity: 0 },
+  {name:'ไปยาล',     price:1599, img:"https://cdn.discordapp.com/attachments/1153766321666932836/1153887347616776263/4.jpg", quantity: 0 },
 
-  {name:'Too nice',    price:1699, img:"https://scontent.fbkk8-4.fna.fbcdn.net/v/t39.30808-1/292496235_1007767096737663_225747972753273688_n.png?stp=dst-png_p320x320&_nc_cat=110&ccb=1-7&_nc_sid=754033&_nc_eui2=AeElcXBRemzlCc00lIr4Gg4HzTWRn5lngH3NNZGfmWeAfdM0r7nLsyIZaexMz8_UB8jL6tg2M4vxxRmT3iKLZbmm&_nc_ohc=2hWztmABB_sAX_Q6Nb3&_nc_ht=scontent.fbkk8-4.fna&oh=00_AfAHyTW93_EDeJFNeNvKt1aCY4J7V8Et238UqX7FEJ4gMA&oe=65082E34", quantity: 0 },
-
-
-  {name:'ท่าช้าง',  price:1890,  img:"https://scontent.fbkk8-4.fna.fbcdn.net/v/t39.30808-6/375029827_709973494492365_1738695314107857060_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeFL9-N37V6xpl9ybQQ7FBZA_6qgl7AQYeb_qqCXsBBh5lt1bpfvTLtD65N7cmCm6wJ7aQxkIQ18ZJlw_4iPCI5y&_nc_ohc=hZLyC7KhOMUAX-flrgt&_nc_ht=scontent.fbkk8-4.fna&oh=00_AfDLQCJzMkHVY6sNeIyd7HD9fC03km1W7krt4Sjm-KceQw&oe=65080193", quantity: 0 },
+  {name:'Too nice',    price:1699, img:"https://cdn.discordapp.com/attachments/1153766321666932836/1153887347868442642/5.png", quantity: 0 },
 
 
-  {name:'Beer lab',      price:675, img:"https://scontent.fbkk8-4.fna.fbcdn.net/v/t39.30808-6/326776461_983306725977390_1286925122631726978_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeF1Ywb4j0jzAKiBj2OSSgPDDbJxNGoeGtoNsnE0ah4a2rGXYUI_AKkz9jMg_OiM6XP4-mQuh4pgkXOJfXGs7H2T&_nc_ohc=co9_cYeTCnQAX8h_sKB&_nc_ht=scontent.fbkk8-4.fna&oh=00_AfBXog7J8RRIOiUyVxMYbqKsin8Dy-whbfaEhNpElNeiDw&oe=650821B9", quantity: 0 },
+  {name:'ท่าช้าง',  price:1890,  img:"https://cdn.discordapp.com/attachments/1153766321666932836/1153887348094943232/6.jpg", quantity: 0 },
 
 
-  {name:'Warm up',     price:1250, img:"https://scontent.fbkk8-4.fna.fbcdn.net/v/t39.30808-6/326148970_1521569305000988_2338094468162899732_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a2f6c7&_nc_aid=0&_nc_eui2=AeHdrRzQLjAXk3z9zYSatohZJSB-z1el8TIlIH7PV6XxMsYI3VPYXaWft8sKQRkEMdnn378aOgRBez-gwkIXATgA&_nc_ohc=66rSvEUftNUAX8qlmPU&_nc_ht=scontent.fbkk8-4.fna&oh=00_AfAcBF_nKR-NR_O1qNp7tJtBiCGCZQ7ggBix_l0oR7szfQ&oe=65090158", quantity: 0 },
+  {name:'Beer lab',      price:675, img:"https://cdn.discordapp.com/attachments/1153766321666932836/1153887348321419314/7.jpg", quantity: 0 },
+
+
+  {name:'Warm up',     price:1250, img:"https://cdn.discordapp.com/attachments/1153766321666932836/1153887346635317259/8.jpg", quantity: 0 },
 ])
 
 
